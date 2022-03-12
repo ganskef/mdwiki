@@ -128,7 +128,7 @@ module.exports = function(grunt) {
                 curly: false,
                 eqeqeq: true,
                 immed: true,
-                latedef: true,
+                latedef: false,
                 newcap: true,
                 noarg: true,
                 sub: true,
@@ -201,11 +201,11 @@ module.exports = function(grunt) {
                 'index.tmpl'
             ],
             tasks: ['devel']
-        },
+        }/*, grunt-reload contains security issues
         reload: {
             port: 35729,
             liveReload: {}
-        }
+        }*/
     });
 
     // These plugins provide necessary tasks.
@@ -215,7 +215,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-reload');
+//    grunt.loadNpmTasks('grunt-reload');
 
     grunt.registerTask('index_slim', 'Generate slim mdwiki.html, most scripts on CDN', function() {
         createIndex(grunt, 'slim');
@@ -233,7 +233,7 @@ module.exports = function(grunt) {
     /* Debug is basically the fat version but without any minifing */
     grunt.registerTask('release-debug', [ 'jshint', 'concat:dev', 'index_debug' ]);
 
-    grunt.registerTask('devel', [ 'release-debug', 'reload', 'watch' ]);
+    grunt.registerTask('devel', [ 'release-debug', /*'reload',*/ 'watch' ]);
 
     grunt.registerTask('release',[
         'release-slim', 'release-fat', 'release-debug',
