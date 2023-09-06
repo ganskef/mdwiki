@@ -2,19 +2,22 @@
     'use strict';
 
     var themes = [
-        { name: 'bootstrap', url: 'netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' },
-        { name: 'amelia', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/amelia/bootstrap.min.css' },
-        { name: 'cerulean', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/cerulean/bootstrap.min.css' },
-        { name: 'cosmo', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/cosmo/bootstrap.min.css' },
-        { name: 'cyborg', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/cyborg/bootstrap.min.css' },
-        { name: 'flatly', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css' },
-        { name: 'journal', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css' },
-        { name: 'readable', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/readable/bootstrap.min.css' },
-        { name: 'simplex', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css' },
-        { name: 'slate', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/slate/bootstrap.min.css' },
-        { name: 'spacelab', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/spacelab/bootstrap.min.css' },
-        { name: 'united', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.0/united/bootstrap.min.css' },
-        { name: 'yeti', url: 'netdna.bootstrapcdn.com/bootswatch/3.0.2/yeti/bootstrap.min.css' }
+        { name: 'bootstrap', url: 'netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' },
+        { name: 'cerulean', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/cerulean/bootstrap.min.css' },
+        { name: 'cosmo', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/cosmo/bootstrap.min.css' },
+        { name: 'cyborg', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/cyborg/bootstrap.min.css' },
+        { name: 'flatly', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/flatly/bootstrap.min.css' },
+        { name: 'journal', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/journal/bootstrap.min.css' },
+        { name: 'lumen', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/lumen/bootstrap.min.css' },
+        { name: 'paper', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/paper/bootstrap.min.css' },
+        { name: 'readable', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/readable/bootstrap.min.css' },
+        { name: 'sandstone', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/sandstone/bootstrap.min.css' },
+        { name: 'simplex', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/simplex/bootstrap.min.css' },
+        { name: 'slate', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/slate/bootstrap.min.css' },
+        { name: 'spacelab', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/spacelab/bootstrap.min.css' },
+        { name: 'superhero', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/superhero/bootstrap.min.css' },
+        { name: 'united', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/united/bootstrap.min.css' },
+        { name: 'yeti', url: 'netdna.bootstrapcdn.com/bootswatch/3.4.1/yeti/bootstrap.min.css' }
     ];
     var useChooser = false;
     var themeChooserGimmick = {
@@ -63,6 +66,15 @@
                 .attr('href', $.md.prepareLink(theme.url))
                 .appendTo('head');
         }
+        $(
+            '<style type="text/css">' +
+                // override prism.css for dark themes
+                "code[class*=language-],pre[class*=language-]{color:inherit;background:0 0;text-shadow:none;}" +
+                ".token.entity,.token.operator,.token.url{background:inherit;}" +
+                // override bootstrap.css for dark themes and with pink from prismjs
+                "code{color:#DD4A68;background-color:inherit;}pre{color:inherit;background-color:inherit;}" +
+                "</style>"
+        ).appendTo("head");
 
         if (theme.inverse === true) {
             $('#md-main-navbar').removeClass ('navbar-default');
@@ -131,7 +143,7 @@
             $chooser.eq(1).append($li);
 
             $chooser.eq(1).append('<li class="divider" />');
-            $chooser.eq(1).append('<li><a href="http://www.bootswatch.com">Powered by Bootswatch</a></li>');
+            $chooser.eq(1).append('<li><a href="http://www.bootswatch.com/3/">Powered by Bootswatch</a></li>');
             $this.replaceWith($chooser);
         });
     };
