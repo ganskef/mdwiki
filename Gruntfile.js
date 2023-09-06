@@ -57,34 +57,32 @@ module.exports = function(grunt) {
 
         // files that we always inline (stuff not available on CDN)
         internalCssFiles: [
-            'extlib/css/colorbox.css'
+            'extlib/css/colorbox.css', // contains user settings
+            'extlib/css/prism.css', // manual download with user settings
         ],
         // ONLY PUT ALREADY MINIFIED FILES IN HERE!
         internalJsFiles: [
-            'extlib/js/jquery.colorbox.min.js'
+            'node_modules/jquery-colorbox/jquery.colorbox-min.js',
+            'extlib/js/prism.js', // manual download with user settings
         ],
 
         // files that we inline in the fat release (basically everything)
         // ONLY PUT ALREADY MINIFIED FILES IN HERE!
         externalJsFiles: [
-            'extlib/js/jquery-1.8.3.min.js',
-            'extlib/js/bootstrap-3.0.0.min.js',
-            'extlib/js/prism.1.4.1.min.js'
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
         ],
         externalCssFiles: [
-            'extlib/css/bootstrap-3.0.0.min.css',
-            'extlib/css/prism.1.4.1.default.min.css'
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
         ],
 
         // references we add in the slim release (stuff available on CDN locations)
         externalJsRefs: [
-            'ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',
-            'netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',
-            'raw.azureedge.net/joelself/mdwiki/0.6.x.0/extlib/js/prism.1.4.1.min.js'
+            'ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js',
+            'netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js',
         ],
         externalCssRefs: [
-            'netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css',
-            'raw.azureedge.net/joelself/mdwiki/0.6.x.0/extlib/css/prism.1.4.1.default.min.css'
+            'netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css',
 //            'www.3solarmasses.com/retriever-bootstrap/css/retriever.css'
 //            '3solarmasses.com/corgi-bootstrap/css/corgi.css'
         ],

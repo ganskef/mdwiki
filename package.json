@@ -2,7 +2,6 @@
   "name": "mdwiki",
   "version": "0.6.3",
   "devDependencies": {
-    "bower": "^1.8.13",
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-concat": "^2.0.0",
@@ -14,5 +13,17 @@
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "3.4.1",
+    "bootswatch": "3.4.1",
+    "jquery": "3.7.1",
+    "jquery-colorbox": "1.6.4",
+    "prismjs": "1.29.0"
+  },
+  "scripts": {
+    "build": "npm install && grunt",
+    "start": "grunt watch",
+    "test": "grunt && grunt test"
   }
 }
