@@ -403,14 +403,7 @@
 
     }
     function loadContent(href) {
-        if(href.startsWith('/')) {
-            // prevent cross-domain inclusions to prevent possible XSS
-            href = "/./" + href;
-        } else {
-            href = "./" + href;
-        }
         $.md.mainHref = href;
-
 
         registerFetchMarkdown();
         registerClearContent();
