@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         },
 
         ownJsFiles: [
-            'js/marked.js',
             'js/init.js',
             'js/logging.js',
             'js/stage.js',
@@ -69,6 +68,7 @@ module.exports = function(grunt) {
         // files that we inline in the fat release (basically everything)
         // ONLY PUT ALREADY MINIFIED FILES IN HERE!
         externalJsFiles: [
+            'node_modules/marked/marked.min.js',
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
         ],
@@ -78,13 +78,12 @@ module.exports = function(grunt) {
 
         // references we add in the slim release (stuff available on CDN locations)
         externalJsRefs: [
-            'ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js',
-            'netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js',
+            'cdn.jsdelivr.net/npm/marked@8.0.1/marked.min.js',
+            'cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js',
+            'cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js',
         ],
         externalCssRefs: [
-            'netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css',
-//            'www.3solarmasses.com/retriever-bootstrap/css/retriever.css'
-//            '3solarmasses.com/corgi-bootstrap/css/corgi.css'
+            'cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css',
         ],
 
         concat: {
@@ -151,7 +150,7 @@ module.exports = function(grunt) {
                 src: 'Gruntfile.js'
             },*/
             js: {
-                src: ['js/*.js', 'js/**/*.js', '!js/marked.js']
+                src: ['js/*.js', 'js/**/*.js']
             }
         },
         lib_test: {

@@ -19,7 +19,8 @@
     "bootswatch": "3.4.1",
     "jquery": "3.7.1",
     "jquery-colorbox": "1.6.4",
-    "prismjs": "1.29.0"
+    "prismjs": "1.29.0",
+    "marked": "8.0.1"
   },
   "scripts": {
     "build": "npm install && grunt",

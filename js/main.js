@@ -64,7 +64,6 @@
     function transformMarkdown (markdown) {
         var options = {
             gfm: true,
-            tables: true,
             breaks: true
         };
         if ($.md.config.lineBreaks === 'original')
@@ -72,10 +71,10 @@
         else if ($.md.config.lineBreaks === 'gfm')
             options.breaks = true;
 
-        marked.setOptions(options);
+        marked.use(options);
 
         // get sample markdown
-        var uglyHtml = marked(markdown);
+        var uglyHtml = marked.parse(markdown);
         return uglyHtml;
     }
 
@@ -325,7 +324,7 @@
                 return;
             }
 
-            var navHtml = marked(navMD);
+            var navHtml = marked.parse(navMD);
             // TODO why are <script> tags from navHtml APPENDED to the jqcol?
             var $h = $('<div>' + navHtml + '</div>');
 
