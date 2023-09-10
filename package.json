@@ -2,18 +2,29 @@
   "name": "mdwiki",
   "version": "0.6.3",
   "devDependencies": {
-    "grunt": ">=0.4.1",
-    "grunt-cli": ">=0.1.6",
-    "grunt-contrib-concat": "~0.1.3",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-watch": ">=0.2.0rc7",
-    "grunt-reload": "git://github.com/webxl/grunt-reload.git",
-    "grunt-contrib-jshint": "~0.6.2",
-    "bower": "~1.2.6",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-shell": "~0.4.0"
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-concat": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-shell": "^3.0.1"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "3.4.1",
+    "bootswatch": "3.4.1",
+    "jquery": "3.7.1",
+    "jquery-colorbox": "1.6.4",
+    "prismjs": "1.29.0",
+    "marked": "8.0.1"
+  },
+  "scripts": {
+    "build": "npm install && grunt",
+    "start": "grunt watch",
+    "test": "grunt && grunt test"
   }
 }

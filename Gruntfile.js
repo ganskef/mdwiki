@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         },
 
         ownJsFiles: [
-            'js/marked.js',
             'js/init.js',
             'js/logging.js',
             'js/stage.js',
@@ -57,36 +56,34 @@ module.exports = function(grunt) {
 
         // files that we always inline (stuff not available on CDN)
         internalCssFiles: [
-            'extlib/css/colorbox.css'
+            'extlib/css/colorbox.css', // contains user settings
+            'extlib/css/prism.css', // manual download with user settings
         ],
         // ONLY PUT ALREADY MINIFIED FILES IN HERE!
         internalJsFiles: [
-            'extlib/js/jquery.colorbox.min.js'
+            'node_modules/jquery-colorbox/jquery.colorbox-min.js',
+            'extlib/js/prism.js', // manual download with user settings
         ],
 
         // files that we inline in the fat release (basically everything)
         // ONLY PUT ALREADY MINIFIED FILES IN HERE!
         externalJsFiles: [
-            'extlib/js/jquery-1.8.3.min.js',
-            'extlib/js/bootstrap-3.0.0.min.js',
-            'extlib/js/prism.1.4.1.min.js'
+            'node_modules/marked/marked.min.js',
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
         ],
         externalCssFiles: [
-            'extlib/css/bootstrap-3.0.0.min.css',
-            'extlib/css/prism.1.4.1.default.min.css'
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
         ],
 
         // references we add in the slim release (stuff available on CDN locations)
         externalJsRefs: [
-            'ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',
-            'netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',
-            'raw.azureedge.net/joelself/mdwiki/0.6.x.0/extlib/js/prism.1.4.1.min.js'
+            'cdn.jsdelivr.net/npm/marked@8.0.1/marked.min.js',
+            'cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js',
+            'cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js',
         ],
         externalCssRefs: [
-            'netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css',
-            'raw.azureedge.net/joelself/mdwiki/0.6.x.0/extlib/css/prism.1.4.1.default.min.css'
-//            'www.3solarmasses.com/retriever-bootstrap/css/retriever.css'
-//            '3solarmasses.com/corgi-bootstrap/css/corgi.css'
+            'cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css',
         ],
 
         concat: {
@@ -128,7 +125,7 @@ module.exports = function(grunt) {
                 curly: false,
                 eqeqeq: true,
                 immed: true,
-                latedef: true,
+                latedef: false,
                 newcap: true,
                 noarg: true,
                 sub: true,
@@ -153,7 +150,7 @@ module.exports = function(grunt) {
                 src: 'Gruntfile.js'
             },*/
             js: {
-                src: ['js/*.js', 'js/**/*.js', '!js/marked.js']
+                src: ['js/*.js', 'js/**/*.js']
             }
         },
         lib_test: {
@@ -201,11 +198,11 @@ module.exports = function(grunt) {
                 'index.tmpl'
             ],
             tasks: ['devel']
-        },
+        }/*, grunt-reload contains security issues
         reload: {
             port: 35729,
             liveReload: {}
-        }
+        }*/
     });
 
     // These plugins provide necessary tasks.
@@ -215,7 +212,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-reload');
+//    grunt.loadNpmTasks('grunt-reload');
 
     grunt.registerTask('index_slim', 'Generate slim mdwiki.html, most scripts on CDN', function() {
         createIndex(grunt, 'slim');
@@ -233,7 +230,7 @@ module.exports = function(grunt) {
     /* Debug is basically the fat version but without any minifing */
     grunt.registerTask('release-debug', [ 'jshint', 'concat:dev', 'index_debug' ]);
 
-    grunt.registerTask('devel', [ 'release-debug', 'reload', 'watch' ]);
+    grunt.registerTask('devel', [ 'release-debug', /*'reload',*/ 'watch' ]);
 
     grunt.registerTask('release',[
         'release-slim', 'release-fat', 'release-debug',

@@ -252,7 +252,7 @@
 
         $('#md-content').removeClass ('col-md-12');
         $('#md-content').addClass ('col-md-9');
-        $('#md-content-row').prepend('<div class="col-md-3" id="md-left-column"/>');
+        $('#md-content-row').prepend('<div class="col-md-3"><div id="md-left-column"/></div>');
 
         var recalc_width = function () {
             // if the page menu is affixed, it is not a child of the
