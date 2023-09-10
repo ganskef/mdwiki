@@ -8,3 +8,4 @@ Implementations:
 
 * <https://github.com/vmg/redcarpet/blob/master/ext/redcarpet/html.c#L297>
 * <https://github.com/russross/blackfriday/blob/a477dd1646916742841ed20379f941cfa6c5bb6f/block.go#L1464>
+* **used:** <https://github.com/Flet/github-slugger/releases/tag/2.0.0>

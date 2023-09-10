@@ -8,7 +8,7 @@ See **<https://dynalon.github.io/mdwiki/>** for historic info and documentation.
 
 ## Breaking Changes
 
-* The formerly MDwiki implementation of anchor urls for headings allows illegal characters. It is been replaced with GFM style anchors like GitHub does (#2). Search your `*.md` files with RegExp `\.md#[\w-]*?[^)a-z0-9_-][\w-]*?\)` and check the existing anchor parts.
+* The formerly MDwiki implementation of anchor urls for headings allows illegal characters. It is been replaced with GFM style anchors like GitHub does (#2). Search your `*.md` files with RegExp `\.md#[^)]*[A-Z_?!.ÄÖÜäöüß][^)]*\)` (case sensitive, maybe add more special characters you've used) and check the existing anchor parts.
 
 
 ## Download
