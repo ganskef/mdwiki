@@ -70,10 +70,15 @@
     });
 
     $.md.util.getInpageAnchorText = function (text) {
-        var subhash = text.replace(/ /g, '_');
-        // TODO remove more unwanted characters like ?/,- etc.
+        // Strip characters from anchor urls in GitHub Flavored Markdown - GFM
+        // see https://github.com/vmg/redcarpet/blob/master/ext/redcarpet/html.c#L297
+        // see https://github.com/russross/blackfriday/blob/a477dd1646916742841ed20379f941cfa6c5bb6f/block.go#L1464
+        var subhash = text
+            .normalize()
+            .replace(/[&+$,\/:;=?@"#{}|^~[\]`\\*()%.!']+/g, "")
+            .replace(/ /g, "-")
+            .toLowerCase();
         return subhash;
-
     };
     $.md.util.getInpageAnchorHref = function (text, href) {
         href = href || $.md.mainHref;
