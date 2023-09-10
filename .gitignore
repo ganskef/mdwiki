@@ -7,6 +7,5 @@ app/components
 md/
 .DS_Store
 .AppleDouble
-package-lock.json
 .idea/
 .vscode/
