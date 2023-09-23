@@ -18,7 +18,7 @@ You can manually set a specific theme that will be used if the ThemeChooser gimm
 
 This will set the default theme to `flatly`. You can see a list of the theme names in the `ThemeChooser` gimmick or on this page (select `Change theme` in the navbar).
 
-To apply the theme globally for all files, put the entry into `navigation.md`. You can also switch the "inverse" mode, which will change colors for some themes (see <http://www.bootswatch.com/> for details)
+To apply the theme globally for all files, put the entry into `navigation.md`. You can also switch the "inverse" mode, which will change colors for some themes (see <https://www.bootswatch.com/> for details)
 
     [gimmick:theme (inverse: true)](flatly)
 
@@ -62,4 +62,4 @@ Note: More configuration options will be available in future versions of MDwiki.
 Hint: It is adviced that you create an empty config.json in each cases, to avoid 404 errors which will not get cached by your browser. Having an `config.json` file present thus will speed up page loading (even if its empty).
 
   [GFM]: https://help.github.com/articles/github-flavored-markdown
-  [DaringFireball]: http://daringfireball.net/projects/markdown/
+  [DaringFireball]: https://daringfireball.net/projects/markdown/

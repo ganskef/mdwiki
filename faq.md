@@ -39,4 +39,4 @@ Gimmicks that won't work when using `file://` urls:
   *  A: Yes, with some additional work. There is no user-friendly, easy solution yet, but we are working on it. Take for example [www.notesync.org] which is running MDwiki and fully indexed by google. We are still evaluating best solutions to make the same techniques easily accesible for everyone.
 
   [issues]: https://github.com/ganskef/mdwiki/issues
-  [www.notesync.org]: http://www.notesync.org/
+  [www.notesync.org]: https://www.notesync.org/

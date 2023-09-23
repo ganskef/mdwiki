@@ -1,7 +1,7 @@
 MDwiki Individual Contributor License Agreement (CLA)
 =====
 
-_(the following text is an unmodified CLA template created by the [Harmony Project](http://www.harmonyagreements.org/) at <http://www.harmonyagreements.org/> using the Harmony Selector)_
+_(the following text is an unmodified CLA template created by the [Harmony Project](https://www.harmonyagreements.org/) at <https://www.harmonyagreements.org/> using the Harmony Selector)_
 
 - - - -
 

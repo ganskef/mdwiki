@@ -22,10 +22,10 @@ SubHeading
   * list item 1
   * list item 2
 
-  This is a hyperlink to [Google](http://google.com).
+  This is a hyperlink to [Google](https://google.com).
 
   Images are like hyperlinks, but with an exclamation mark in front of them:
-  ![](http://placekitten.com/g/250/250)
+  ![](https://placekitten.com/g/250/250)
 
 ```
 
@@ -53,9 +53,9 @@ Making a website out of it
 
 All you have to do is upload your markdown files with an `.md` file extension together with the [mdwiki.html][download] and access them via the hashbang `#!` character:
 
-    http://example.com/mdwiki.html#!myfile.md
+    https://example.com/mdwiki.html#!myfile.md
 
-It is advised that you create an `index.md` file which serves as a starting point for your wiki when no parameter is given - in this case MDwiki will automatically fetch and display the `index.md`. If you also rename the `mdwiki.html` file into `index.html`, there are no parameters required and you can access your wiki at `http://example.com/`!
+It is advised that you create an `index.md` file which serves as a starting point for your wiki when no parameter is given - in this case MDwiki will automatically fetch and display the `index.md`. If you also rename the `mdwiki.html` file into `index.html`, there are no parameters required and you can access your wiki at `https://example.com/`!
 
 - - - -
 
@@ -106,7 +106,7 @@ Creating links
 
 Links to anywhere in the web are done via regular Markdown links:
 
-    [Google](http://www.google.com)
+    [Google](https://www.google.com)
 
 Links within the wiki are just plain relative links:
 
@@ -123,36 +123,36 @@ Images are regularly placed as in standard markdown using the `![alt](href "titl
 
 Example:
 
-    ![](http://placekitten.com/g/1200/300 "A kitten")
+    ![](https://placekitten.com/g/1200/300 "A kitten")
 
-    ![](http://placekitten.com/g/550/450 "First of two kittens")
-    ![](http://placekitten.com/g/550/450 "Second of two kittens")
+    ![](https://placekitten.com/g/550/450 "First of two kittens")
+    ![](https://placekitten.com/g/550/450 "Second of two kittens")
 
-    ![](http://placekitten.com/g/400/350)
-    ![](http://placekitten.com/g/400/350)
-    ![](http://placekitten.com/g/400/350)
+    ![](https://placekitten.com/g/400/350)
+    ![](https://placekitten.com/g/400/350)
+    ![](https://placekitten.com/g/400/350)
 
 Will be rendered as:
 
-![](http://placekitten.com/g/1200/300 "A kitten")
+![](https://placekitten.com/g/1200/300 "A kitten")
 
-![](http://placekitten.com/g/550/450 "First of two kittens")
-![](http://placekitten.com/g/550/450 "Second of two kittens")
+![](https://placekitten.com/g/550/450 "First of two kittens")
+![](https://placekitten.com/g/550/450 "Second of two kittens")
 
-![](http://placekitten.com/g/400/350)
-![](http://placekitten.com/g/400/350)
-![](http://placekitten.com/g/400/350)
+![](https://placekitten.com/g/400/350)
+![](https://placekitten.com/g/400/350)
+![](https://placekitten.com/g/400/350)
 
 ### Images as Links
 
 To use an image as a link, use the following syntax:
 
-    [![ImageCaption](path/to/image.png)](http://www.linktarget.com)
+    [![ImageCaption](path/to/image.png)](https://www.linktarget.com)
 
     Example:
-    [![A kitten](http://placekitten.com/g/400/400)](http://www.placekitten.com)
+    [![A kitten](https://placekitten.com/g/400/400)](https://www.placekitten.com)
 
-[![A kitten](http://placekitten.com/g/400/400)](http://www.placekitten.com)
+[![A kitten](https://placekitten.com/g/400/400)](https://www.placekitten.com)
 
 - - - -
 
@@ -216,6 +216,6 @@ Through the usage of [Gimmicks][gimmicks], which are like plugins, you can add m
   [download]: download.md
 
   [gfmsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-  [gfm]: http://github.github.com/github-flavored-markdown/
-  [markdown]: http://daringfireball.net/projects/markdown/
+  [gfm]: https://github.github.com/github-flavored-markdown/
+  [markdown]: https://daringfireball.net/projects/markdown/
 

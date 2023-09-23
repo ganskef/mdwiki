@@ -4,14 +4,14 @@ Set up MDwiki on IIS Server
 About
 ------
 
-This walkthrough will describe how to setup MDwiki and get it running on [IIS](http://iis.com).  We also assume you have a fresh windows server setup with IIS installed.
+This walkthrough will describe how to setup MDwiki and get it running on [IIS](https://iis.com).  We also assume you have a fresh windows server setup with IIS installed.
 
 Instructions
 -------------
 
 ### Get MDwiki
 
-Obtain MDwiki from http://mdwiki.info, you can either fork and build your own, or download the precompiled release.
+Obtain MDwiki from https://mdwiki.info, you can either fork and build your own, or download the precompiled release.
 
 The precompiled release comes with a couple different version of mdwiki.html file, feel free to use whatever one you want, but for this walkthrough we'll be using the ``mdwiki.html``.
 

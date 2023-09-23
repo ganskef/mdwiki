@@ -7,9 +7,9 @@ About
 ------
 
 
-This tutorial describes how to setup a public website using MDwiki  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the MDwiki project website located at <http://www.mdwiki.info> is also hosted on GitHub.
+This tutorial describes how to setup a public website using MDwiki  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the MDwiki project website located at <https://www.mdwiki.info> is also hosted on GitHub.
 
-[![Github logo](githublogo.png)](http://www.github.com)
+[![Github logo](githublogo.png)](https://www.github.com)
 
 The advantages on using GitHub for your website or wiki:
 
@@ -19,20 +19,20 @@ The advantages on using GitHub for your website or wiki:
 * Hosting is fast and reliable
 * You can optionally use your own domain
 
-[GitHub]: http://www.github.com
+[GitHub]: https://www.github.com
 
 Steps
 ------
 
 ### Step 1: Get a GitHub account
 
-You can sign up with GitHub at <http://www.github.com/signup>.
+You can sign up with GitHub at <https://www.github.com/signup>.
 
 ### Step 2: Fork mdwiki-seed
 
 We have set up a [minimal example MDwiki installation](https://github.com/exalted/mdwiki-seed) that you can use as a starting point. Included is the latest MDwiki release and some example Markdown that is easy to understand.  Follow the link and click the "fork" button to get your own copy. Call it something like `<MyProject>-wiki`.
 
-Now you should be able to see an index page at `http://<username>.github.io/<MyProject>-wiki/#!index.md`, where username is your Github account name.  It may take up to ten minutes for this to be available.
+Now you should be able to see an index page at `https://<username>.github.io/<MyProject>-wiki/#!index.md`, where username is your Github account name.  It may take up to ten minutes for this to be available.
 
 ### Step 3: See MDwiki-seed README.md for more detail
 
