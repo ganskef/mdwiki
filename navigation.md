@@ -2,7 +2,7 @@
 
 [Docs]()
 
-  * [Quickstart](quickstart.md)
+  * [Quick Start](quickstart.md)
   * [Layout](layout.md)
   * [FAQ](faq.md)
   - - - -
