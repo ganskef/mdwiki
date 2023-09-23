@@ -19,11 +19,8 @@ This is a lose collection of websites that are known to be realized with MDwiki.
 ----     | -----
 [dynalon.github.io/Rainy](https://dynalon.github.io/Rainy)      |   Open source project website
 [appletons.ca](https://www.appletons.ca)      | Private website
-[help.caleydo.org](https://help.caleydo.org/) | Software documentation for biomolecular visualization project
 [fooirc.com](https://fooirc.com/)             | A windows IRC Client
-[khannover.de](https://khannover.de/)         | Private website
-[jda.rocks](https://jda.rocks/)              | Private development website
-[constructive.gforge.inria.fr](https://constructive.gforge.inria.fr/)              | Documentation for a scientific experiment
+[ganskef.github.io/MoCuishle](https://ganskef.github.io/MoCuishle/#!index.md) | An other project page
 
 [mdwikisrc]: https://github.com/ganskef/mdwiki/tree/gh-pages
 
@@ -33,7 +30,6 @@ Quick examples with source code
 
 This is a list of examples websites that are created with [MDwiki]. The full source of all the websites is available at [GitHub][githubrepo] and a got start for creating your own websites.
 
-* [Sample coffee place](https://dynalon.github.io/mdwiki-examples/cafe/) [[Markdown source]][cafe]
 * [Simple travel blog website](https://dynalon.github.io/mdwiki-examples/travel_blog/) [[Markdown source]][travelblog]
 * [Single-page fansite about Muscle Cars](https://dynalon.github.io/mdwiki-examples/muscle_cars/) [[Markdown source]][musclecars]
 
