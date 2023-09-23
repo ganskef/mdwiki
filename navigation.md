@@ -1,7 +1,5 @@
 # MDwiki
 
-[About](index.md)
-
 [Docs]()
 
   * [Quickstart](quickstart.md)
@@ -33,11 +31,12 @@
 
 [gimmick:ThemeChooser](Change theme)
 
-[gimmick:forkmeongithub](http://github.com/Dynalon/mdwiki/)
+[gimmick:forkmeongithub](http://github.com/ganskef/mdwiki/)
 
 <!-- counter pixel for counting visitors -->
 <!-- <img src="http://stats.markdown.io/mdwiki_info.gif" style="display:none;"/> -->
 
+<!--
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -51,3 +50,4 @@
   })();
 
 </script>
+-->

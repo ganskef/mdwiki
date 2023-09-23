@@ -13,8 +13,9 @@ MDwiki ships with two different files:
 ### Get the latest release &raquo;[here][release_dl]&laquo;
 
 
-  [release_dl]: https://github.com/Dynalon/mdwiki/releases
+  [release_dl]: https://github.com/ganskef/mdwiki/releases
 
+<!--
 * * *
 
 Latest CI build from git
@@ -27,25 +28,21 @@ Attention: To **download** the latest build, you need to right click -> "Save li
 
 * [mdwiki-latest.html](mdwiki-latest.html), Minified version for production use
 * [mdwiki-latest-debug.html](mdwiki-latest-debug.html), Unminified version for debugging and testing
+-->
 
 Source code
 -----------
 
-To download and build from source, `node.js` >= 0.10 is required with installed npm.
-
+To download and build from source:
 
 ```bash
-git clone https://github.com/Dynalon/mdwiki.git
+git clone https://github.com/ganskef/mdwiki.git
 cd mdwiki
 
 # will fetch deps and build everything (requires automake installed)
-make
+npm run build
 
 # now find your local mdwiki.html in the dist/ folder
 
-
-# for development: Create a debugging friendly, unminified mdwiki-debug.html
-# in dist/ with automatic filesystem watcher
-./node_modules/.bin/grunt devel
-
+# for development: Use the debugging friendly, not minified mdwiki-debug.html
 ```

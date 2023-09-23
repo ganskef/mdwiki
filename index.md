@@ -3,7 +3,9 @@ About
 
 MDwiki is a CMS/Wiki __completely built in HTML5/Javascript and runs 100% on the client__. No special software installation or server side processing is required. Just upload the `mdwiki.html` shipped with MDwiki into the same directory as your markdown files and you are good to go!
 
-Note: The website you are currently viewing is realized with MDwiki and hosted on [GitHub pages](http://pages.github.com/). [http://mdwiki.info](http://mdwiki.info) redirects here.
+MDwiki presents your GitHub Flavored Markdown files in a browser. MDwiki implements wiki features like navigation, styles and additional Gimmicks. But, it let you decide how to edit and store your data. Markdown files are widely accepted and supported by tools which make it very future proof. MDwiki is a great Separation Of Concerns example thereby.
+
+Note: The website you are currently viewing is realized with MDwiki and hosted on [GitHub pages](http://pages.github.com/). The Markdown sources are located here <https://github.com/ganskef/mdwiki/tree/gh-pages>.
 
 [gimmick:twitterfollow](timodoerr)
 
@@ -13,7 +15,7 @@ Features
   * Built completely in Javascript/HTML5 and __does not require any local or remote installations__
   * Uses [Markdown][markdown] as its input markup language
   * Build on top of [jQuery][jQuery] and [Bootstrap3][bootstrap] to work cross-browser, with responsive layout
-  * Extends Markdown with special [_Gimmicks_][gimmicks] that add rich client functions, like syntax highlighting via [hightlight.js][highlightjs], [GitHub Gists][gists], or [Google Maps][maps] for geo data
+  * Extends Markdown with special [_Gimmicks_][gimmicks] that add rich client functions, like syntax highlighting via [prismjs][prismjs], [GitHub Gists][gists], or [Google Maps][maps] for geo data
   * Themeable through Bootstrap compatibility, supports all themes from [bootswatch](http://www.bootswatch.com)
 
 
@@ -71,7 +73,7 @@ Cute kitten images provided by the great [placekitten.com] service.
   [colorbox]: http://www.jacklmoore.com/colorbox/
   [gists]: https://gist.github.com/
   [maps]: http://maps.google.com/
-  [highlightjs]: https://highlightjs.org/
+  [prismjs]: https://prismjs.com/
   [placekitten.com]: http://www.placekitten.com/
 
 License

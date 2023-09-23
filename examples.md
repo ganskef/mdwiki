@@ -6,8 +6,8 @@ Wiki
 
 This Wiki that you are viewing right now is made with MDwiki. Find the source to it [here][mdwikisrc].
 
-  [mdwikisrc]: https://github.com/Dynalon/mdwiki/tree/gh-pages
-  [wiki]: http://mdwiki.info/
+  [mdwikisrc]: https://github.com/ganskef/mdwiki/tree/gh-pages
+  [wiki]: https://ganskef.github.io/mdwiki/
 
 
 Real-world websites done with MDwiki
@@ -25,7 +25,7 @@ This is a lose collection of websites that are known to be realized with MDwiki.
 [jda.rocks](https://jda.rocks/)              | Private development website
 [constructive.gforge.inria.fr](http://constructive.gforge.inria.fr/)              | Documentation for a scientific experiment
 
-[mdwikisrc]: https://github.com/Dynalon/mdwiki/tree/gh-pages
+[mdwikisrc]: https://github.com/ganskef/mdwiki/tree/gh-pages
 
 
 Quick examples with source code
@@ -39,9 +39,9 @@ This is a list of examples websites that are created with [MDwiki]. The full sou
 
 All quick example websites may be freely modified and changed for your purposes. Note that some images are licensed under [CC-BY(-ND/-SA) 2.0][cc] terms and you have to respect the copyright of the images.
 
-[cc]: http://creativecommons.org/licenses/
-[MDwiki]: http://www.mdwiki.info
-[githubrepo]: http://github.com/Dynalon/mdwiki-examples/
+[cc]: https://creativecommons.org/licenses/
+[MDwiki]: https://www.mdwiki.info
+[githubrepo]: https://github.com/Dynalon/mdwiki-examples/
 [cafe]: https://github.com/Dynalon/mdwiki-examples/tree/gh-pages/cafe
 [musclecars]: https://github.com/Dynalon/mdwiki-examples/tree/gh-pages/muscle_cars
 [travelblog]: https://github.com/Dynalon/mdwiki-examples/tree/gh-pages/travel_blog

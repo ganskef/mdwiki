@@ -11,12 +11,12 @@ To use Gimmicks, all you have to do is include some specially crafted link into 
 Gimmicks are realized via Javascript and work out of the box. Some gimmicks can be called with parameters on them, to customize their behaviour:
 
 
-    [gimmick:ForkMeOnGitHub ({ color: 'red',  position: 'left' })](http://www.github.com/Dynalon/mdwiki)
+    [gimmick:ForkMeOnGitHub ({ color: 'red',  position: 'left' })](http://www.github.com/ganskef/mdwiki)
 
 
 The arguments are passed as a Javascript object. But for convienience reasons, you can omit the curly brackets `{ }`. The gimmick name after `gimmick:` is also case-insensitive:
 
-    [gimmick:forkmeongithub(color: 'red', position: 'left')](http://www.github.com/Dynalon/mdwiki)
+    [gimmick:forkmeongithub(color: 'red', position: 'left')](http://www.github.com/ganskef/mdwiki)
 
 Gimmicks are designed to always chose sane default values when no parameters are given, therefore *most* gimmicks do not require any parameters to work.
 
@@ -110,11 +110,11 @@ The popular github ribbon that is also present on this page. See the [github pag
 
 Example:
 
-    [gimmick:ForkMeOnGitHub](http://www.github.com/Dynalon/mdwiki)
+    [gimmick:ForkMeOnGitHub](http://www.github.com/ganskef/mdwiki)
 
 or with options:
 
-    [gimmick:ForkMeOnGitHub (position: 'left', color: 'darkblue') ](http://www.github.com/Dynalon/mdwiki)
+    [gimmick:ForkMeOnGitHub (position: 'left', color: 'darkblue') ](http://www.github.com/ganskef/mdwiki)
 
 Arguments:
 

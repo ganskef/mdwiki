@@ -38,5 +38,5 @@ Gimmicks that won't work when using `file://` urls:
   * ### Q: Can sites generated from MDwiki be crawled and indexed by search engines like Google?
   *  A: Yes, with some additional work. There is no user-friendly, easy solution yet, but we are working on it. Take for example [www.notesync.org] which is running MDwiki and fully indexed by google. We are still evaluating best solutions to make the same techniques easily accesible for everyone.
 
-  [issues]: https://github.com/Dynalon/mdwiki/issues
+  [issues]: https://github.com/ganskef/mdwiki/issues
   [www.notesync.org]: http://www.notesync.org/
