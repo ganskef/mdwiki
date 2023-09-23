@@ -7,7 +7,7 @@ About
 ------
 
 
-This tutorial describes how to setup a public website using MDwiki  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the MDwiki project website located at <https://www.mdwiki.info> is also hosted on GitHub.
+This tutorial describes how to setup a public website using MDwiki  which is hosted through [GitHub][GitHub]. GitHub is a perfect choice for hosting, and the MDwiki project website located at <http://www.mdwiki.info> is also hosted on GitHub.
 
 [![Github logo](githublogo.png)](https://www.github.com)
 

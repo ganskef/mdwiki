@@ -40,7 +40,7 @@ This is a list of examples websites that are created with [MDwiki]. The full sou
 All quick example websites may be freely modified and changed for your purposes. Note that some images are licensed under [CC-BY(-ND/-SA) 2.0][cc] terms and you have to respect the copyright of the images.
 
 [cc]: https://creativecommons.org/licenses/
-[MDwiki]: https://www.mdwiki.info
+[MDwiki]: http://www.mdwiki.info
 [githubrepo]: https://github.com/Dynalon/mdwiki-examples/
 [cafe]: https://github.com/Dynalon/mdwiki-examples/tree/gh-pages/cafe
 [musclecars]: https://github.com/Dynalon/mdwiki-examples/tree/gh-pages/muscle_cars

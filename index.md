@@ -1,12 +1,13 @@
-# MDwiki
+# MDwiki (forked 0.6.x)
 
 MDwiki is a CMS/Wiki __completely built in HTML5/Javascript and runs 100% on the client__. No special software installation or server side processing is required. Just upload the `mdwiki.html` shipped with MDwiki into the same directory as your markdown files and you are good to go!
 
 MDwiki presents your GitHub Flavored Markdown files in a browser. MDwiki implements wiki features like navigation, styles and additional Gimmicks. But, it let you decide how to edit and store your data. Markdown files are widely accepted and supported by tools which make it very future proof. MDwiki is a great Separation Of Concerns example thereby.
 
-Note: The website you are currently viewing is realized with MDwiki and hosted on [GitHub pages](https://pages.github.com/). The Markdown sources are located here <https://github.com/ganskef/mdwiki/tree/gh-pages>.
+**Note:** This fork aims to support future use of MDwiki with **up to date** dependency versions. The website you are currently viewing is realized with MDwiki and hosted on [GitHub pages](https://pages.github.com/). The Markdown sources are located here <https://github.com/ganskef/mdwiki/tree/gh-pages>.
 
-[gimmick:twitterfollow](timodoerr) the original developer
+[gimmick:twitterfollow](timodoerr)
+Timo Dörr - the original developer. The original MDwiki instance at <http://www.mdwiki.info> is based on the archived GitHub repository <https://github.com/Dynalon/mdwiki/>.
 
 Features
 --------
