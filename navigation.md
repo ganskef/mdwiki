@@ -8,8 +8,7 @@
   - - - -
   * # Advanced
   * [Customizing](customizing.md)
-
-[Gimmicks](gimmicks.md)
+  * [Gimmicks](gimmicks.md)
 
 [Tutorials]()
 
@@ -23,15 +22,9 @@
 [Examples](examples.md)
 [Download](download.md)
 [Contribute](contribute/index.md)
-<!--
-[Blog](blog.md)
-[Forum](forum.md)
--->
+[gimmick:themechooser](Theme)
 
 [gimmick:theme (inverse: false)](spacelab)
-
-[gimmick:ThemeChooser](Change theme)
-
 [gimmick:forkmeongithub](https://github.com/ganskef/mdwiki/)
 
 <!-- counter pixel for counting visitors -->
