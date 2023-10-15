@@ -1,6 +1,6 @@
 {
   "name": "mdwiki",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "devDependencies": {
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",

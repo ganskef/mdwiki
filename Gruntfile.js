@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     // Metadata.
         pkg: {
             name: 'MDwiki',
-            version: '0.6.3'
+            version: '0.6.4'
         },
 
         ownJsFiles: [
